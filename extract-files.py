@@ -26,11 +26,11 @@ namespace_imports = [
 ]
 
 blob_fixups: blob_fixups_user_type = {
-    (
-        'vendor/lib64/hw/camera.qcom.so',
-        'vendor/lib64/libvidhance.so',
-    ): blob_fixup()
+    ('vendor/lib64/hw/camera.qcom.so', 'vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so'): blob_fixup()
         .add_needed('libcomparetf2_shim.so'),
+    ('vendor/lib64/libvidhance.so', 'vendor/lib64/camera/components/com.vidhance.node.eis.so'): blob_fixup()
+        .add_needed('libcomparetf2_shim.so')
+        .add_needed('libdemangle.so'),
     'vendor/etc/camera/camxoverridesettings.txt': blob_fixup()
         .regex_replace('0x10080', '0')
         .regex_replace('0x1F', '0'),
