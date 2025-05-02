@@ -33,10 +33,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     DSPVolumeSynchronizer
 
-# Display
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,qdcm_calib_data_*.xml,$(LOCAL_PATH)/qdcm/,$(TARGET_COPY_OUT_VENDOR)/etc/)
-
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.violet.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.violet.rc
