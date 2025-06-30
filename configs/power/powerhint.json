@@ -247,12 +247,14 @@
       "ResetOnInit": true
     },
     {
-      "Name": "DoubleTapToWakeEnable",
+      "Name": "DoubleTapToWake",
       "Path": "/sys/devices/virtual/touch/touch_dev/double_tap",
       "Values": [
-        "1",
-        "0"
+        "0",
+        "1"
       ],
+      "DefaultIndex": 0,
+      "ResetOnInit": true
     },
     {
       "Name": "PowerHALMainState",
@@ -522,7 +524,7 @@
     },
     {
       "PowerHint": "DOUBLE_TAP_TO_WAKE",
-      "Node": "DoubleTapToWakeEnable",
+      "Node": "DoubleTapToWake",
       "Duration": 0,
       "Value": "1"
     }
