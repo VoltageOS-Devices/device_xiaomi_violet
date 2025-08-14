@@ -230,14 +230,6 @@
         <item>600</item>
     </integer-array>
 
-    <!-- Vibrator pattern for feedback about hitting a scroll barrier -->
-    <integer-array name="config_scrollBarrierVibePattern">
-        <item>0</item>
-        <item>8</item>
-        <item>5</item>
-        <item>5</item>
-    </integer-array>
-
     <!-- The bounding path of the cutout region of the main built-in display.
          Must either be empty if there is no cutout region, or a string that is parsable by
          {@link android.util.PathParser}.
