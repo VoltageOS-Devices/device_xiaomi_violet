@@ -1,8 +1,5 @@
 # These proprietary files are extracted from Redmi Note 7 Pro (codenamed `violet`) MIUI V12.5.4.0.QFHCNXM, unless pinned
 
-# Current blobs with ELF checks disabled:
-# libvidhance have unresolved symbol: __cxa_demangle
-
 # ACDB
 vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb
 vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb
@@ -250,7 +247,7 @@ vendor/lib64/libmpbase.so
 vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsymphony-cpu.so
 vendor/lib64/libsymphonypower.so
-vendor/lib64/libvidhance.so;DISABLE_CHECKELF
+vendor/lib64/libvidhance.so
 vendor/lib64/mibokeh_660_opencl.bin
 
 # Camera Firmware
