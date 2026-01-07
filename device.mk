@@ -59,12 +59,14 @@ PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-voltage
+PRODUCT_PACKAGES += \
+    ApertureOverlayViolet \
+    WifiOverlayViolet
 
 PRODUCT_PACKAGES += \
-    WifiOverlayViolet
+    FrameworkOverlayViolet \
+    SettingsOverlayViolet \
+    SystemUIOverlayViolet
 
 # Power
 PRODUCT_COPY_FILES += \
