@@ -65,6 +65,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     FrameworkOverlayViolet \
+    Launcher3OverlayViolet \
     SettingsOverlayViolet \
     SystemUIOverlayViolet
 
